@@ -16,7 +16,8 @@ npm install
 node serve.js
 ```
 
-Following times just run `node serve.js` to start the vault.
+> [!TIP]
+> Following times just run `node serve.js` to start the vault.
 
 The output:
 
@@ -29,11 +30,12 @@ Vault seeding... waiting for peers to connect and sync...
 Use the above invite code to connect your mobile app to the vault.
 ```
 
-Leave this running and then start the app.
+> [!WARNING]
+> Leave this running and then start the app.
 
 ### App
 
-Installation:
+Installation (only the first time):
 ```bash
 npm i b4a bare-fs bare-rpc corestore autopass @react-native-clipboard/clipboard graceful-goodbye
 npm i bare-pack @types/b4a --save-dev
@@ -49,7 +51,6 @@ Run the app:
 ```bash
 npm run android
 ```
-
 
 Now in your phone you should see the app running and asking for the invite code. Copy the invite code from the vault output and paste it in the app. The app will connect to the vault and sync the passwords:
 
