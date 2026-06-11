@@ -20,10 +20,10 @@ if (count === 0) {
 const invite = await pass.createInvite()
 console.log('INVITE:', invite)
 console.log('Vault path:', dir)
-console.log('Vault seeding... esperando conexiones')
+console.log('Vault seeding... waiting for peers to connect and sync...')
 
 goodbye(() => pass.close())
 
 pass.on('update', () => {
-  console.log('Vault actualizado')
+  console.log('Vault updated')
 })

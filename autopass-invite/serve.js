@@ -11,7 +11,7 @@ worker.stdout.on('data', (data) => {
   const msg = data.toString()
   console.log(msg)
   if (msg.startsWith('INVITE:')) {
-    console.log('\nUsa este invite en la app mobile')
+    console.log('\nUse the above invite code to connect your mobile app to the vault.\n')
   }
 })
 worker.stderr.on('data', (data) => process.stderr.write(data))
