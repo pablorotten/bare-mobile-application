@@ -8,7 +8,7 @@ import {
   Alert,
   StyleSheet
 } from 'react-native'
-import { documentDirectory } from 'expo-file-system'
+import { documentDirectory } from 'expo-file-system/legacy'
 import Clipboard from '@react-native-clipboard/clipboard'
 import { Worklet } from 'react-native-bare-kit'
 import bundle from './app.bundle.mjs'
