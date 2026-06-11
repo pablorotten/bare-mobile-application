@@ -55,3 +55,13 @@ npm run android
 Now in your phone you should see the app running and asking for the invite code. Copy the invite code from the vault output and paste it in the app. The app will connect to the vault and sync the passwords:
 
 <img src="screenshot.png" width="300" >
+
+
+## Differences from the original tutorial
+
+1. `pear run`: deprecated (removal by June 2026). Didn't work on Windows.
+2. pearpass-example: the desktop app the tutorial assumes as the vault "server". Failed on Windows (uses pear-electron + old Pear global API).
+3. autopass-invite: created as a replacement using `pear-runtime` (Node.js host + Bare worker).
+4. `--target` → `--host`: bare-pack 2.x renamed the flag.
+5. expo-file-system/legacy: in Expo SDK 55, documentDirectory was moved to the legacy subpath.
+6. autopass version mismatch: tutorial used autopass 2.x, npm installed 3.x. Desktop server had 2.x, incompatible with mobile's 3.x.
