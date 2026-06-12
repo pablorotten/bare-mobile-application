@@ -41,7 +41,7 @@ npm i b4a bare-fs bare-rpc corestore autopass @react-native-clipboard/clipboard 
 npm i bare-pack @types/b4a --save-dev
 ```
 
-Set your properties in local.properties file:
+Set your properties in `local.properties` file inside the `android` folder (you can copy the one in the root folder and modify it):
 ```
 sdk.dir=C:/.../Android/Sdk
 org.gradle.java.home=C:/.../openjdk23/current
@@ -56,7 +56,13 @@ Now in your phone you should see the app running and asking for the invite code.
 
 <img src="screenshot.png" width="300" >
 
-
+> [!TIP]
+> If the app doesn't appear in the phone, press `a` in the metro terminal to open it.
+```sh
+› Using development build
+› Press s │ switch to Expo Go
+› Press a │ open Android
+```
 ## Differences from the original tutorial
 
 1. `pear run`: deprecated (removal by June 2026). Didn't work on Windows.
